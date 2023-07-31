@@ -1,5 +1,5 @@
 import java.text.DecimalFormat;
-
+/**your father was here
 public class Carbon14Dating {
     private double remainingAmount;
     private double age;
@@ -15,8 +15,7 @@ public class Carbon14Dating {
     /**
      * This setter only allows numbers => 1. If it is not >=1 the setter defaults the value to 1.
      * @param remainingAmount the amount of c14 in the sample as a percentage (whole number)
-     */
-    public void setRemainingAmount(double remainingAmount) {
+         public void setRemainingAmount(double remainingAmount) {
         if (remainingAmount >= 1){
             this.remainingAmount = remainingAmount;
         }else{
@@ -31,7 +30,7 @@ public class Carbon14Dating {
     /**
      * @author Luke Matheis
      * @return the age of the sample in years
-     */
+
     public double calculateAge() {
         // Transforms whole % into decimal
         double fractionRemaining = remainingAmount / 100.0;
@@ -48,7 +47,7 @@ public class Carbon14Dating {
     /**
      * This method makes the Carbon14Date Class be able to be printed out correctly.
      * @return the number of years in a user-friendly format.
-     */
+
     @Override
     public String toString() {
         DecimalFormat decimalFormat = new DecimalFormat("#,###.##");
